@@ -15,7 +15,7 @@ export default async function handler(req) {
   return new Response(body, {
     status: response.status,
     headers: {
-      'Content-Type': response.headers.get('content-type') || 'text/html',
+      'Content-Type': 'text/html; charset=utf-8',
       'Cache-Control': 'no-cache',
     },
   });
