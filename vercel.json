@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/:type/:id",
+      "destination": "/api/proxy?type=:type&id=:id"
+    }
+  ]
+}
